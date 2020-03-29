@@ -43,7 +43,9 @@ once nano is open you can scroll down to the commented part for a static IPv4 ad
 
 This part depends a lot on your router. If your ISP provides your router you could run into access problems. This is why it's important to have your admin router password. The best tutorial I found for this was [here](https://portforward.com/router.htm)
 
-and that's it! If it's going to start attached to your local network. For this project I wanted to be able to store the pi at a different physical location. In order to do that we need to allow at least SSH and possibly VPN.
+and that's it! If it's going to start attached to your local network. For this project I wanted to be able to store the pi at a different physical location. In order to do that we need to allow SSH or Remote Desktop. For most users I think having access to the GUI of Raspbian is adventageous. 
+
+* Optional: Set up Remote Desktop Login Access (WARNING!: This could hinder your router and network security if not done properly)
 
 The easiest way to do this without opening up another port on your router is to whitelist your desktop/main laptop to the network that runs the raspberry pi webserver.
 
