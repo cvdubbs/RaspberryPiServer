@@ -43,11 +43,17 @@ once nano is open you can scroll down to the commented part for a static IPv4 ad
 
 This part depends a lot on your router. If your ISP provides your router you could run into access problems. This is why it's important to have your admin router password. The best tutorial I found for this was [here](https://portforward.com/router.htm)
 
-and that's it! If it's going to start attached to your local network. For this project I wanted to be able to store the pi at a different physical location. In order to do that we need to allow SSH or Remote Desktop. For most users I think having access to the GUI of Raspbian is adventageous. 
+3. Dynamic DNS from your ISP and Getting around it
+
+This last part is a bit tricky. Your home router gets a dynamic IP assigned by your ISP. This means that you can't just redirect your router's public IP to your desired domain name that you've registered (If you haven't registered one yet [here](www.godaddy.com) is a good cheap resource). There is a free service that will do this for 30 days, but has to be changed every 30 days. 
+
+NoIp.com is a service that let works with changing IP addresses from it's host. The best tutorial I found to set up both their software on your pi and manage their website is [here](https://www.instructables.com/id/Host-your-website-on-Raspberry-pi/). After that, you just need to redirect your noip information and pi info to your dns provider. For godaddy there's a great solution [here](https://ca.godaddy.com/community/Managing-Domains/Dynamic-DNS-Updates/td-p/7862)
+
+and that's it! If it's going to stay attached to your local network. For this project I wanted to be able to store the pi at a different physical location. In order to do that we need to allow SSH or Remote Desktop. For most users I think having access to the GUI of Raspbian is adventageous. 
 
 * Optional: Set up Remote Desktop Login Access (WARNING!: This could hinder your router and network security if not done properly)
 
-The easiest way to do this without opening up another port on your router is to whitelist your desktop/main laptop to the network that runs the raspberry pi webserver. You can also use PiVPN and open vpn in order to connect to your pi from abroad. Here's a great video with a great resource for [installing PiVPN](https://www.youtube.com/watch?v=9LNC393pqyE)
+The easiest and safest way to do this without opening up another port on your router is to whitelist your desktop/main laptop to the network that runs the raspberry pi webserver. You can also use PiVPN and open vpn in order to connect to your pi from abroad. Here's a great video with a great resource for [installing PiVPN](https://www.youtube.com/watch?v=9LNC393pqyE)
 
-I installed Xrdp using this [guide](https://linuxize.com/post/how-to-install-xrdp-on-raspberry-pi/) and then followed the port set up instructions [here](https://www.windowscentral.com/how-use-remove-desktop-app-connect-pc-windows-10-0) and was able to connect via remote desktop using windows 10 to the raspberrry pi server~!
+You can also install Xrdp using this [guide](https://linuxize.com/post/how-to-install-xrdp-on-raspberry-pi/) and then follow the port set up instructions [here](https://www.windowscentral.com/how-use-remove-desktop-app-connect-pc-windows-10-0) and be able to connect via remote desktop using windows 10 to the raspberrry pi server~!
 
