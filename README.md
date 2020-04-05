@@ -47,7 +47,7 @@ and that's it! If it's going to start attached to your local network. For this p
 
 * Optional: Set up Remote Desktop Login Access (WARNING!: This could hinder your router and network security if not done properly)
 
-The easiest way to do this without opening up another port on your router is to whitelist your desktop/main laptop to the network that runs the raspberry pi webserver.
+The easiest way to do this without opening up another port on your router is to whitelist your desktop/main laptop to the network that runs the raspberry pi webserver. You can also use PiVPN and open vpn in order to connect to your pi from abroad. Here's a great video with a great resource for [installing PiVPN](https://www.youtube.com/watch?v=9LNC393pqyE)
 
 I installed Xrdp using this [guide](https://linuxize.com/post/how-to-install-xrdp-on-raspberry-pi/) and then followed the port set up instructions [here](https://www.windowscentral.com/how-use-remove-desktop-app-connect-pc-windows-10-0) and was able to connect via remote desktop using windows 10 to the raspberrry pi server~!
 
